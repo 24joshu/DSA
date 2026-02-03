@@ -1,13 +1,15 @@
 #Arrays
 ---> An Array which stores elemets in contiguous memory.
----> Elements are accessed using index number where it starts from 0 to n-1. In puthon it have negativeindex also which start from-1.
+---> Elements are accessed using index number where it starts from 0 to n-1. 
+---> In python it have negative index also which start from -1.
+
 Example:
 arr = [1,2,3,4]
 print(arr)
 
-
 --------------------------------------------------------------------------------------------------------------
 Basic Problems using Array
+
 1.Largest Element in An Array
 Def Largest_Element_In_an_Array(self,nums):
            nums.sort()
