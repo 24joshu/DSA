@@ -1,0 +1,39 @@
+#Arrays
+---> An Array which stores elemets in contiguous memory.
+---> Elements are accessed using index number where it starts from 0 to n-1. In puthon it have negativeindex also which start from-1.
+Example:
+arr = [1,2,3,4]
+print(arr)
+
+
+--------------------------------------------------------------------------------------------------------------
+Basic Problems using Array
+1.Largest Element in An Array
+Def Largest_Element_In_an_Array(self,nums):
+           nums.sort()
+           return nums[-1]
+
+2.Check if the Array is Sorted
+class Solution:
+    def isSorted(self, nums):
+        for i in range(1,len(nums)):
+            if nums[i] < nums[i-1]:
+                return False
+        return True
+
+3.Linear Search
+class Solution:
+    def linearSearch(self, nums, target):
+        for i in range(0,len(nums)):
+            if nums[i] == target:
+                return i
+        return -1
+
+4.Left Rotate an array by one place
+class Solution:
+    def rotateArrayByOne(self, nums):
+        temp = nums[0]
+        for i in range(1,len(nums)):
+            nums[i-1] = nums[i]
+        nums[i] = temp
+        return nums
